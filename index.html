@@ -11,14 +11,21 @@
 
     <header class = "header-content">
         <h1>Guess The Word!</h1>
-        <button id = "start-btn">Start</button>
+
+        <div id = "button-wrapper">
+            <button class = "btn" id = "start-btn">Start</button>
+            <button class = "btn" id = "reset-btn">Reset</button>
+        </div>
     </header>
 
     <main id = "wrapper">
-        <div id = "word-container"></div>
 
+        <div id = "word-container">Ready?</div>
+    
         <div id = "stats-container">
-            <h3 id = "timer">Time left:<span id = "time-remaining"></span></h3>
+            <h2 id = "timer">Time left: 15</h2>
+            <h2 id = "win-text">Wins: 0</h2>
+            <h2 id = "lose-text">Losses: 0</h2>
         </div>
     </main>
     

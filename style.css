@@ -18,33 +18,37 @@ body {
     margin: 0;
 }
 
-#start-btn {
+.btn {
     padding: 5px;
     width: 15rem;
-    background-color: green;
     color: white;
     font-size: 24px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
     border-radius: 10px;
+
+}
+
+#start-btn {
+    background-color: green;
+}
+
+#reset-btn {
+    background-color: maroon;
 }
 
 #wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 10%;
     margin-bottom: 10%;
 }
 
 #word-container {
     float: left;
-    height: 70%;
+    height: 25rem;
+    width: 25rem;
     width: 50%;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 3%;
-    padding-right: 3%;
     border: 3px solid black;
     border-radius: 10px;
     margin-right: 10%;
@@ -53,17 +57,23 @@ body {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
+    padding-top: 10rem;
 }
 
 #stats-container {
     float: left;
-    height: 70%;
+    height: 25rem;
     width: 30%;
-    padding: 15%;
     background-color: papayawhip;
     border: 3px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
+    text-align: center;
+    padding-top: 5.25rem;
+}
+
+#stats-container > h2 {
+    margin-bottom: 3rem;
 }
 
 /* Responsive design */
@@ -73,10 +83,25 @@ body {
         flex-direction: column;
     }
 
+    #button-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #reset-btn {
+        margin-top: 3rem;
+    }
+
     #word-container, #stats-container {
         width: 90%;
-        margin-bottom: 5%;
+        margin-bottom: 7.5%;
         margin-right: 0;
+        margin-left: 5%;
     }
 
 }
