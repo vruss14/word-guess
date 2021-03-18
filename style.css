@@ -4,76 +4,83 @@
 
 body {
     margin: 0;
+    background-color: rgb(148, 145, 145);
 }
 
 .header-content {
-    background-color: black;
+    background-color: #3D5E7A;
     color: white;
     font-size: 36px;
+    font-family: 'Noto Serif SC', serif;
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     margin: 0;
 }
 
 .btn {
     padding: 5px;
     width: 15rem;
-    color: white;
+    color: black;
     font-size: 24px;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
     border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 
 }
 
 #start-btn {
-    background-color: green;
+    background-color: #C9E3FB;
 }
 
 #reset-btn {
-    background-color: maroon;
+    background-color: #C9E3FB;
 }
 
 #wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+#word-container, #stats-container {
+    float: left;
+    height: 25rem;
+    background-color: #C9E3FB;
+    border: 5px solid #3D5E7A;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
 }
 
 #word-container {
-    float: left;
-    height: 25rem;
-    width: 25rem;
     width: 50%;
-    border: 3px solid black;
-    border-radius: 10px;
     margin-right: 10%;
-    background-color: papayawhip;
-    box-shadow: 5px 5px 5px black;
     font-size: 50px;
+    font-family: 'Noto Serif SC', serif;
     font-weight: bold;
-    text-align: center;
     padding-top: 10rem;
 }
 
 #stats-container {
-    float: left;
-    height: 25rem;
     width: 30%;
-    background-color: papayawhip;
-    border: 3px solid black;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px black;
-    text-align: center;
     padding-top: 5.25rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #stats-container > h2 {
     margin-bottom: 3rem;
+}
+
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: #3D5E7A;
 }
 
 /* Responsive design */
@@ -95,13 +102,12 @@ body {
 
     #reset-btn {
         margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 
     #word-container, #stats-container {
         width: 90%;
-        margin-bottom: 7.5%;
-        margin-right: 0;
-        margin-left: 5%;
+        margin: 7% 0 7.5% 5%;
     }
 
 }

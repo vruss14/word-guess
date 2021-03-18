@@ -53,7 +53,7 @@ function setTimer () {
 
         if (timeOnClock === 0) {
             clearInterval(timer);
-            wordContainer.textContent = "You lost! :(";
+            wordContainer.textContent = "Game Over";
             lossCount++;
 
             localStorage.setItem("lossCount", lossCount);
@@ -128,7 +128,7 @@ function checkGuess(guessedLetter) {
 
 function checkIfWinner () {
     if (randomWordSelection === placeholders.join("")) {
-        wordContainer.textContent = "You won! :)";
+        wordContainer.textContent = "You won! 🎉";
         userDidWin = true;
         startBtn.disabled = false;
         winCount++;
