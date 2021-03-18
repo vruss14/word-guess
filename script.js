@@ -86,6 +86,10 @@ document.addEventListener("keydown", function (event) {
         return;
     }
 
+    if (wordContainer.textContent === "You won! 🎉") {
+        return;
+    }
+
     let key = event.key.toLowerCase();
     let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
